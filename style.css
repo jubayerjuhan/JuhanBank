@@ -1,0 +1,69 @@
+.bank-title{
+    text-align: center;
+}
+
+.submit-area{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    padding: 25px;
+    width: 50%;
+    text-align: left;
+    /* display: none; */
+}
+
+.login-area{
+    justify-content: center;
+    text-align: -webkit-center;
+    /* display: none; */
+}
+body{
+    background-size: cover;
+    font-family: SF Pro Display;
+    margin-top: 50px;
+}
+
+/* .title{
+    text-align: center;
+} */
+
+#transection-area{
+    display: none;
+}
+
+.deposit{
+    background-color: slateblue;
+}
+
+.withdraw{
+    background-color: lightsalmon;
+}
+
+.balance{
+    background-color: orange;
+}
+
+.status {
+    margin: 0 50px;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.depo-card{
+    margin-right: 120px;
+    padding: 30px;
+}
+
+.withdraw-card{
+    margin-left: 120px;
+    padding: 30px;
+}
+
+.wdcrd{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.withdraw-and-depo-card{
+    margin-top: 100px;
+}

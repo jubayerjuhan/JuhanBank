@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Juhan Bank</title>
+</head>
+
+<body>
+    <div class="login-area" id="login-area">
+        <h1 class="mt-5 bank-title" style="margin-bottom: 50px;">Welcome To Juhan Bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <br>
+            <input class="form-control" type="email" name="Email" id="email" placeholder="Email">
+            <br>
+            <input class="form-control" type="password" name="Pass" id="password" placeholder="Password">
+            <br>
+            <button id="login-btn" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+
+    <div id="transection-area" style="margin: 10px;">
+        <!-- <h1 class="title">Transection Area</h1> -->
+
+        <div class="depo-cards" style="margin: 50px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit status">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="deposit-value">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="withdraw-value">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2>$ <span id="balance-value">00</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row withdraw-and-depo-card">
+                <div class="col-md-6" style="padding: 0px;">
+                    <div class="depo-card wdcrd">
+                        <h5>Deposit</h5>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input id="depo-amount" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                        <br>
+                        <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6" style="padding: 0px;">
+                    <div class="withdraw-card wdcrd">
+                        <h5>Withdraw</h5>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" id="withdraw-amount" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                        <br>
+                        <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
